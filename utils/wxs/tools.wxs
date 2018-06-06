@@ -1,0 +1,18 @@
+
+//获取指定格式的时间字符串
+module.exports.getFormatTimeString = function (timestamp, format) {
+  var date = getDate(timestamp)
+  var year = date.getFullYear()
+  var month = date.getMonth() + 1
+  var day = date.getDate()
+  var hour = date.getHours()
+  var minute = date.getMinutes()
+  var second = date.getSeconds()
+
+  var formatNumber = function (n) {
+    n = n.toString()
+    return n[1] ? n : '0' + n
+  }
+
+  return format.replace("yyyy", year).replace("MM", formatNumber(month)).replace("dd", formatNumber(day)).replace("HH", formatNumber(hour)).replace("mm", formatNumber(minute)).replace("ss", formatNumber(second))
+}

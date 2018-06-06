@@ -1,0 +1,11 @@
+<wxs src="../../utils/wxs/tools.wxs" module="tools" />
+<view class='show-box' bindtap='itemClick' data-item='{{item}}'>
+    <view class=' image-layout ' hidden='{{!item.displayPic}}'>
+      <image class='image' mode='aspectFill' src='{{item.displayPic.picUrl}}' />
+    </view>
+    <view class='text-layout '>
+      <text class='title '>{{item.title}}</text>
+      <text class='time '>{{tools.getFormatTimeString(item.materialId?item.createTime:item.publishTime,"yyyy-MM-dd HH:mm")}}</text>
+    </view>
+    <text wx:if='{{item.materialId}}' class='status'>{{item.type=="1"?item.statusName:'已投稿'}}</text>
+  </view>

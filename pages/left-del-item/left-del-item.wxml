@@ -1,0 +1,10 @@
+<view class='parent-layout' style='margin-left:{{leftStyle}}rpx;margin-bottom:{{length==index+1?20:0}}rpx;'>
+  <view class='item-content' bind:touchstart="touchJS" bind:touchmove="touchJM">
+    <view class='item-content' catch:touchmove="{{touchM}}" bind:touchend="touchE">
+      <slot name="content"></slot>
+    </view>
+  </view>
+  <view class='item-del'>
+    <slot name="del"></slot>
+  </view>
+</view>

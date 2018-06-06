@@ -1,0 +1,64 @@
+/* pages/account/item/item.wxss */
+
+/**列表显示内容外容器box*/
+
+.show-box {
+  display: flex;
+  width: 710rpx;
+  height: 188rpx;
+  margin: 0 20rpx 0 20rpx;
+  background: #fff;
+  box-shadow: 0 8rpx 32rpx 0 rgba(99, 101, 102, 0.30);
+}
+
+/**图片部分外容器*/
+
+.image-layout {
+  width: 188rpx;
+  height: 188rpx;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/**图片*/
+
+.image {
+  width: 188rpx;
+  height: 188rpx;
+  position: absolute;
+}
+
+/**文本部分外布局，包括时间等*/
+
+.text-layout {
+  flex: 1;
+  height: 188rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+/**标题*/
+
+.title {
+  font-size: 28rpx;
+  color: #222;
+  margin: 24rpx 16rpx 0 16rpx;
+}
+
+/**时间*/
+
+.time {
+  font-size: 24rpx;
+  color: #959fa6;
+  margin: 16rpx;
+}
+
+/**稿件状态*/
+
+.status {
+  font-size: 24rpx;
+  text-align: right;
+  line-height: 40rpx;
+  margin: 16rpx;
+}

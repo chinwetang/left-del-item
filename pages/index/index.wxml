@@ -1,0 +1,14 @@
+
+<import src="../template/template.wxml" />
+<view style='display:flex;flex-direction:column;justify-content:center;align-items:center;'>
+  <view wx:for="{{list}}" wx:for-index="index" wx:for-item="item" wx:key="item">
+    <left-del-item bindrestoration='restoration' currentId='{{item.contentId}}' delBtnWidth='328'checkedId='{{checkedId}}'>
+      <view slot="content">
+        <item item='{{item}}' bindclick='itemClick' />
+      </view>
+      <view slot="del">
+        <button class='del' bindtap='delClick' data-item='{{item}}'>删除</button>
+      </view>
+    </left-del-item>
+  </view>
+</view>

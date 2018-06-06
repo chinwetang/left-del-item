@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "左滑删除插件",
+  "backgroundColor": "#ff0000",
+  "usingComponents": {
+    "left-del-item": "../left-del-item/left-del-item",
+    "item": "../item/item"
+  }
+}

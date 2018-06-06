@@ -1,0 +1,26 @@
+/* pages/account/collections/collections.wxss */
+@import "../template/template.wxss";
+
+.root_view {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.scroll_view {
+  height: 100%;
+  overflow: auto;
+}
+/**删除*/
+.del {
+  background: #ff612e;
+  box-shadow: 0 4rpx 8rpx 0 rgba(99, 101, 102, 0.30);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 188rpx;
+  width: 144rpx;
+  margin-right: 20rpx;
+  font-size: 28rpx;
+  color: #fff;
+}
